@@ -30,6 +30,5 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add result_data.csv
-          git commit -m 'file berhasil di-commit dan di-push ke repo'
+          git commit -m "file berhasil di-commit dan di-push ke repo" || echo "belum ada perubahan untuk di-commit dan di-push"
           git push origin main
-          echo "file berhasil di-commit dan di-push ke repo"
