@@ -20,6 +20,11 @@ jobs:
         run: |
           python revenue_calculator.py
 
-      - name: keterangan
+      - name: commit dan push hasilnya ke repo
         run: |
-          echo "ini yml tanpa commit dan push ke repo, perhatiin ada perubahan ga di file tujuannya?"
+          git config --global user.name ${{secrets.username}}
+          git config --global user.email ${{secrets.email}}
+          git add result_data.csv
+          git commit -m 'file berhasil di-commit dan di-push ke repo'
+          git push origin main
+          echo "file berhasil di-commit dan di-push ke repo"
