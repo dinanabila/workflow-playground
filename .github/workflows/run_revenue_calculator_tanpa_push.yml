@@ -1,0 +1,21 @@
+name: run revenue calculator
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: run revenue calculator
+        run: |
+          python revenue_calculator.py
+
+      - name: keterangan
+        run: |
+          echo "ini yml tanpa commit dan push ke repo, perhatiin ada perubahan ga di file tujuannya?"
