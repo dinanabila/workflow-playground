@@ -1,17 +1,19 @@
-name: cuma ngetes tabrakan
+# name: cuma ngetes tabrakan
 
-on:
-  workflow_dispatch:
-  push:
+# on:
+#   workflow_dispatch:
+#   push:
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: checkout repo
-        uses: actions/checkout@v4
+#     steps:
+#       - name: checkout repo
+#         uses: actions/checkout@v4
 
-      - name: ngetes workflow
-        run: |
-          echo "ini yml kedua, conflict ga?"
+#       - name: ngetes workflow
+#         run: |
+#           echo "ini yml kedua, conflict ga?"
+
+# aman. ga tabrakan sejauh ini kalau echo doang.
