@@ -1,4 +1,4 @@
-name: run revenue calculator
+name: run revenue total
 
 on:
   workflow_dispatch:
@@ -21,9 +21,9 @@ jobs:
         run: |
           pip install pandas
 
-      - name: run revenue calculator
+      - name: run revenue total
         run: |
-          python revenue_calculator.py
+          python revenue_total.py
 
       - name: commit dan push hasilnya ke repo
         run: |
